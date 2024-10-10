@@ -16,6 +16,11 @@ public class Zoo : MonoBehaviour
         jerry.name = "제리";
         jerry.sound = "찍찍";
         
+        // 제리를 톰에 덮어쓰기
+        jerry = tom;
+        // 제리를 이름을 미키로 변경
+        jerry.name = "미키";
+        
         // tom에 할당된 Animal 오브젝트의 PlaySound() 메서드를 점 연자로 접근하고 실행!
         tom.PlaySound();
         jerry.PlaySound();
